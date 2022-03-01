@@ -1,0 +1,14 @@
+﻿<Window x:Class="RockPaperScissors.MoveSelection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Rock Paper Scissors" WindowStartupLocation="CenterScreen" Height="600" Width="800" Background="#7ACCFF">
+    <Grid Margin="0,0,0,0" Cursor="Hand" HorizontalAlignment="Left" Width="800">
+        <Label Content="Choose your move:" Margin="224,34,138,0" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="36" FontWeight="Normal" Foreground="White" FontStyle="Italic"/>
+        <Image Name="RockImage" MouseLeftButtonDown="RockImageClick" MouseEnter="OnMouseEnterRockImage" MouseLeave="OnMouseLeaveRockImage" Source="/Images/Rock.png" MaxWidth="200" MaxHeight="200" Stretch="Uniform" Margin="40,181,529,197"/>
+        <Image Name="PaperImage" MouseLeftButtonDown="PaperImageClick" MouseEnter="OnMouseEnterPaperImage" MouseLeave="OnMouseLeavePaperImage" Source="/Images/Paper.png" MaxWidth="200" MaxHeight="200" Stretch="Uniform" Margin="312,194,264,194" />
+        <Image Name="ScissorsImage" MouseLeftButtonDown="ScissorsImageClick" Source="/Images/Scissors.png" MouseEnter="OnMouseEnterScissorsImage" MouseLeave="OnMouseLeaveScissorsImage" MaxWidth="200" MaxHeight="200" Stretch="Uniform" Margin="545,179,20,210"/>
+    </Grid>
+</Window>

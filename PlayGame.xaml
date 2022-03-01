@@ -1,0 +1,22 @@
+﻿<Window x:Class="RockPaperScissors.PlayGame"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Rock Paper Scissors" Height="600" Width="800" Background="#7ACCFF">
+    <Grid Margin="0,0,0,0">
+        <Label Name="RockPaperScissors" Content="" HorizontalAlignment="Center" Margin="181,32,181,0" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="36" FontWeight="Normal" Foreground="White" FontStyle="Italic"/>
+        <Button Name="NewGameButton" Visibility="Hidden" Content="" HorizontalAlignment="Center" Margin="0,434,0,0" VerticalAlignment="Top" Height="40" Width="134" FontFamily="Tahoma" FontSize="22" Background="White" Click="NewGameButtonClick">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Image x:Name="LeftFist" Source="/Images/ClenchedFistLeft.png" MaxWidth="200" MaxHeight="200" Stretch="Uniform" Margin="79,194,497,194" />
+        <Image x:Name="RightFist" Source="/Images/ClenchedFistRight.png" MaxWidth="200" MaxHeight="200" Stretch="Uniform" Margin="497,194,79,194" />
+        <Label x:Name="PlayerLabel" Content="You" Visibility="Hidden" Margin="120,382,594,0" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="32" FontWeight="Normal" Foreground="White"/>
+        <Label x:Name="CPULabel" Content="CPU" Visibility="Hidden" Margin="584,382,118,0" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="32" FontWeight="Normal" Foreground="White"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,28 @@
+﻿<Window x:Class="RockPaperScissors.StartMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RockPaperScissors"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Rock Paper Scissors" Height="600" Width="800" Background="#7ACCFF">
+    <Grid>
+        <Label Content="Rock, Paper, Scissors" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="36" FontWeight="Normal" Foreground="White" FontStyle="Italic"/>
+        <Button Content="Start" HorizontalAlignment="Center" Margin="0,389,0,0" VerticalAlignment="Top" Height="40" Width="134" FontFamily="Tahoma" FontSize="22" Background="White" Click="StartButtonClick">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Quit" HorizontalAlignment="Center" Margin="0,482,0,0" VerticalAlignment="Top" Height="40" Width="134" FontFamily="Tahoma" FontSize="22" Background="White" Click="QuitButtonClick">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Image Margin="51,92,552,260" Source="/Images/Rock.png" MaxWidth="300" MaxHeight="300" Stretch="Uniform"/>
+        <Image Margin="314,120,314,285" Source="/Images/Paper.png" MaxWidth="300" MaxHeight="300" Stretch="Uniform" />
+        <Image Margin="580,110,73,278" Source="/Images/Scissors.png" MaxWidth="300" MaxHeight="300" Stretch="Uniform"/>
+
+
+    </Grid>
+</Window>
