@@ -85,6 +85,7 @@ namespace RockPaperScissors
             _storyboard.Children.Add(translateYAnimation);
 
             _storyboard.Completed += UpdateTitle;
+            
 
             // Start the storyboard.
             _storyboard.Begin(this);
@@ -157,14 +158,11 @@ namespace RockPaperScissors
 
         private void FadeInMoves()
         {
-            // Create a NameScope for the page so that we can use Storyboards
-            NameScope.SetNameScope(this, new NameScope());
-
             var fadeInPlayerMoveAnimation = new DoubleAnimation
             {
                 From = 0,
                 To = 1,
-                Duration = new Duration(TimeSpan.FromMilliseconds(500)),
+                Duration = new Duration(TimeSpan.FromMilliseconds(900)),
                 RepeatBehavior = new RepeatBehavior(1)
             };
 
@@ -172,7 +170,7 @@ namespace RockPaperScissors
             {
                 From = 0,
                 To = 1,
-                Duration = new Duration(TimeSpan.FromMilliseconds(1500)),
+                Duration = new Duration(TimeSpan.FromMilliseconds(900)),
                 RepeatBehavior = new RepeatBehavior(1)
             };
 

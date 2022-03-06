@@ -11,13 +11,7 @@ namespace RockPaperScissors
         public string MoveName { get; set; }
         public ImageSource ImageSource { get; set; }   
         public string WhichMoveCanWin { get; set; } 
-        
-
-        public void ListMoveDetails() 
-        {
-            
-            
-        }
+       
             
 
 
